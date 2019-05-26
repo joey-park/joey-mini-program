@@ -1,0 +1,10 @@
+<view class='container'>
+   <image class='detail-image' src='{{book.images.small}}'></image>
+   <text style='font-weight:bold; font-size:50rpx;'>{{book.title}}</text>
+   <text>想看:{{book.wish_count}}</text>
+   <text>看过:{{book.collect_count}}</text>
+   <text>评分:{{book.rating.average}}</text>
+   <text>简介:{{book.summary}}</text>
+
+
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/weekly/weekly",
+    "pages/detail/detail"
+  ],
+  "tabBar":{
+    "list":[
+      {
+        "text":"每周推荐",
+        "pagePath":"pages/weekly/weekly",
+        "iconPath":"images/weekly.png",
+        "selectedIconPath":"images/weekly-selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-selected.png"
+      }
+      ],
+      "color":"#000",
+      "selectedColor":"#00f"
+      },
+      "window":{
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "好书周周看"
+      }
+}

@@ -1,0 +1,45 @@
+<view class=''>
+<!-- <text>本周推荐</text> -->
+<swiper class='movie-swiper' indicator-dots='{{true}}'
+previous-margin='50rpx' next-margin='50rpx'
+current='{{currentIndex}}'
+>
+<!-- 面板指示 -->
+<swiper-item class='movie' wx:for="{{weeklyBookList}}">
+<view class='container movie-card'
+bindtap='f1'
+data-user-name="blalala"
+data-book-id="{{item.id}}"
+>
+
+<image class='movie-image' src='{{item.imagePath}}'></image>
+<text>{{item.id}}</text>
+<text>第{{index+1}}周：{{item.name}}</text>
+<text>点评：{{item.comment}}</text>
+<!-- <text>{{count}}</text> -->
+<text wx:if="{{item.isHighlyRecommended}}" style='font-size:16px;color:red;'>强烈推荐</text>
+
+<text catchtap='f0'  wx:if="{{index < (weeklyBookList.length-1)}}" class='return-button'>返回本周</text>
+</view>
+
+</swiper-item>
+</swiper>
+
+<!-- <text>{{count}}</text>
+<button catchtap='f0'>+1</button> -->
+
+<!-- <swiper style='background:#eee; hight:260px;'>
+    <swiper-item>
+      <text>123</text>
+      <image src='/images/书籍2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <text>456</text>
+      <image src='/images/书籍3.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <text>789</text>
+      <image src='/images/书籍4.jpg'></image>
+    </swiper-item>
+</swiper> -->
+</view>
